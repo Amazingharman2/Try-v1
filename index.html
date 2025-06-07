@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from prof-ℍ𝔸ℝ𝕄𝔸ℕ.indxdark.com/ by HTTrack Website Copier/3.x [XR&CO'2017], Sat, 23 Nov 2024 15:07:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Professional Portfolio</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="brand">
+                <a href="index.html">ℍ𝔸ℝ𝕄𝔸ℕ</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main class="main-content">
+    
+<div class="hero-section">
+    <div class="intro">
+        <h1>Hi, I'm <span id="bruteforce-name">ℍ𝔸ℝ𝕄𝔸ℕ</span>.</h1>
+        <p>I'm a Python Backend Developer with a passion for building impactful solutions.</p>
+        <div class="buttons">
+            <a href="projects.html" class="btn">View Projects</a>
+            <a href="contact.html" class="btn-outline">Get in Touch</a>
+        </div>
+    </div>
+</div>
+
+<!-- Scroll to Top Button -->
+<div class="scroll-top-btn" onclick="scrollToTop()">↑</div>
+
+<!-- Footer -->
+<footer>
+    <p>Coded by <span>UNIVERSE OP</span> using <span>Flask & Python</span></p>
+    <p>© 2024 ℍ𝔸ℝ𝕄𝔸ℕ 𝙾𝙿</p>
+</footer>
+
+<!-- Scroll to Top Script -->
+<script>
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        // Bruteforce Name Animation (fast hacker effect)
+        const targetText = "ℍ𝔸ℝ𝕄𝔸ℕ";
+        const nameElement = document.getElementById("bruteforce-name");
+        const totalDuration = 1000; // 1 second
+        const intervalDuration = 30; // Faster updates for hacker effect
+        const steps = totalDuration / intervalDuration; // Number of steps to complete in 1 second
+        let step = 0;
+
+        function randomChar() {
+            const chars = "!@#$%^&*()_+{}|:?><~ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            return chars[Math.floor(Math.random() * chars.length)];
+        }
+
+        function updateText() {
+            let displayText = "";
+            for (let i = 0; i < targetText.length; i++) {
+                if (step / steps > Math.random()) {
+                    displayText += targetText[i];
+                } else {
+                    displayText += randomChar();
+                }
+            }
+            nameElement.textContent = displayText;
+
+            if (step < steps) {
+                step++;
+                setTimeout(updateText, intervalDuration);
+            } else {
+                nameElement.textContent = targetText; // Ensure the final text is correct
+                nameElement.style.transition = "color 0.3s ease"; // Add a final effect
+                nameElement.style.color = "#00ff88"; // Change to a hacker-style green color
+            }
+        }
+
+        updateText();
+    });
+</script>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 ℍ𝔸ℝ𝕄𝔸ℕ </p>
+</footer>
+
+</body>
+
+<!-- Mirrored from prof-ℍ𝔸ℝ𝕄𝔸ℕ.indxdark.com/ by HTTrack Website Copier/3.x [XR&CO'2017], Sat, 23 Nov 2024 15:07:23 GMT -->
+</html>
